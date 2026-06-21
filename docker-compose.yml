@@ -20,8 +20,9 @@ services:
       - .:/app
 
   scheduler:
-    build: .
-    container_name: prediction_scheduler
-    command: python -m engine.scheduler
-    volumes:
-      - .:/app
+  build: .
+  container_name: prediction_scheduler
+  command: python -m engine.scheduler
+  volumes:
+    - .:/app
+
