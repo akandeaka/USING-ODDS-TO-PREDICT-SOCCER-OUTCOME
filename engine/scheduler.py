@@ -51,3 +51,11 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+    from engine.performance import init_log
+
+def main():
+    init_log()  # ensure CSV exists
+    morning_predictions()
+    night_results()
+    # then enter schedule loop...
+
