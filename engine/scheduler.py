@@ -9,45 +9,47 @@ from engine.notifications import send_telegram
 
 
 def morning_predictions() -> None:
+    print("Running morning_predictions...")
+    init_log()
     matches = get_match_data()
-    if not matches:
-        return
     lines = []
+
     for m in matches:
-        signals = classify_match(m)
+        signals = classify_match(m)  # returns list of dicts: {"signal":..., "strength":...}
         if not signals:
             continue
-        # placeholder ML confidence until model is integrated
-        ml_conf = 0.8
-        log_prediction(m, signals, ml_conf)
-        lines.append(
-            f"{m['League']} | {m['MatchID']} → {signals} (conf={ml_conf:.2f})"
-        )
+
+        for sig in signals:
+            # baseline ML confidence = strength (later replaced by ML model)
+            ml_conf = sig["strength"]
+            log_prediction(m, [sig["signal"]], ml_conf)
+            lines.append(
+                f"{m['League']} | {m['MatchID']} → {sig['signal']} (strength={ml_conf:.2f})"
+            )
+
     if lines:
         send_telegram("Today's predictions:\n" + "\n".join(lines))
+    else:
+        send_telegram("No predictions today.")
 
 
 def night_results() -> None:
-    # demo: mark all pending as Correct
+    print("Running night_results...")
     try:
         df = pd.read_csv("performance_log.csv")
     except FileNotFoundError:
         return
-    results = {
-        row["match_id"]: True
-        for _, row in df.iterrows()
-        if row["status"] == "PENDING"
-    }
+
+    # demo: mark all pending as Correct
+    results = {row["match_id"]: True for _, row in df.iterrows() if row["status"] == "PENDING"}
     update_results(results)
     send_telegram("Night results updated.")
 
 
 def main() -> None:
     print("Scheduler started at", datetime.now())
-    # make sure the log file exists
     init_log()
 
-    # schedule jobs
     schedule.every().day.at("09:00").do(morning_predictions)
     schedule.every().day.at("23:00").do(night_results)
 
