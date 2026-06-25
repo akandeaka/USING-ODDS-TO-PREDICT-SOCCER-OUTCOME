@@ -15,6 +15,14 @@ else:
         overall = (df["status"] == "Correct").mean() * 100
         st.metric("Overall Accuracy", f"{overall:.1f}%")
 
+                # Confidence-weighted accuracy
+        if "ml_confidence" in df.columns:
+            weighted_acc = (
+                (df["ml_confidence"] * (df["status"] == "Correct").astype(int)).sum()
+                / df["ml_confidence"].sum()
+            ) * 100
+            st.metric("Confidence-Weighted Accuracy", f"{weighted_acc:.1f}%")
+
         # Accuracy by Blueprint Signal
         st.subheader("Accuracy by Blueprint Signal")
         df["signals"] = df["signals"].astype(str)
