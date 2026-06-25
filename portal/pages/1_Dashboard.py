@@ -11,11 +11,13 @@ else:
     if df.empty:
         st.info("Log is empty.")
     else:
+        # Overall accuracy
         overall = (df["status"] == "Correct").mean() * 100
         st.metric("Overall Accuracy", f"{overall:.1f}%")
 
+        # Accuracy by Blueprint Signal
+        st.subheader("Accuracy by Blueprint Signal")
         df["signals"] = df["signals"].astype(str)
-        st.subheader("Accuracy by Blueprint")
         acc_signal = (
             df.groupby("signals")["status"]
             .apply(lambda x: (x == "Correct").mean() * 100)
@@ -23,6 +25,7 @@ else:
         )
         st.bar_chart(acc_signal)
 
+        # Accuracy by League
         st.subheader("Accuracy by League")
         acc_league = (
             df.groupby("league")["status"]
@@ -31,6 +34,7 @@ else:
         )
         st.bar_chart(acc_league)
 
+        # Daily Hit Rate
         st.subheader("Daily Hit Rate")
         daily = (
             df.groupby("date")["status"]
@@ -38,3 +42,11 @@ else:
             .sort_index()
         )
         st.line_chart(daily)
+
+        # Table of Blueprint Performance
+        st.subheader("Blueprint Performance Table")
+        perf_table = pd.DataFrame({
+            "Blueprint": acc_signal.index,
+            "Accuracy (%)": acc_signal.values
+        })
+        st.dataframe(perf_table)
