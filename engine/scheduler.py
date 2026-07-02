@@ -3,7 +3,7 @@ from datetime import datetime
 import schedule
 import pandas as pd
 from engine.data_sources import get_match_data
-from engine.blueprint_classifier import classify_match
+from blueprint_classifier import classify_match
 from engine.performance import log_prediction, update_results, init_log
 from engine.notifications import send_telegram
 
