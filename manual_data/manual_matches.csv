@@ -1,28 +1,98 @@
-MatchID,League,HomeOdds,DrawOdds,AwayOdds,Over1_5Odds
-USA-BIH,World Cup,1.36,5.60,9.20,1.30
-ESP-AUT,World Cup,1.33,5.60,10.50,1.28
-BATE-GOM,Belarus Vysshaya Liga,4.10,3.25,1.92,1.40
-FCM-DNM,Belarus Vysshaya Liga,5.80,4.10,1.53,1.35
-UCL-ULC,Chile Cup,1.45,4.50,5.50,1.38
-HUA-DCN,Chile Cup,2.15,3.15,3.20,1.42
-KUR-FLO,Estonia Meistriliiga,7.40,5.15,1.33,1.25
-TAL-TAB,Estonia Cup,17.00,10.75,1.07,1.20
-HAW-ADA,Ethiopia Premier League,2.58,2.86,2.78,1.33
-CRO-ITA,Euro U19,3.86,3.86,1.93,1.30
-SER-UKR,Euro U19,2.91,3.60,2.41,1.32
-JAZ-KPV,Finland Ykkonen,1.48,4.65,4.90,1.27
-THO-KRR,Iceland Besta deild,7.40,7.00,1.26,1.22
-VIK-KAA,Iceland Besta deild,1.19,7.30,10.50,1.21
-KAI-OKZ,Kazakhstan Premier League,1.30,4.90,9.00,1.25
-JWA-SAH,Lebanon Premier League,1.58,3.60,4.85,1.33
-ARI-RAC,Lebanon Premier League,1.25,4.95,9.00,1.28
-BER-WYD,Morocco Botola Pro,1.83,3.25,4.45,1.35
-COD-FAR,Morocco Botola Pro,5.70,3.70,1.57,1.40
-DCH-OSA,Morocco Botola Pro,2.13,3.15,3.40,1.36
-KAW-MAG,Morocco Botola Pro,4.85,3.05,1.83,1.38
-RAJ-HAS,Morocco Botola Pro,1.48,3.90,6.80,1.32
-REN-FUS,Morocco Botola Pro,1.88,3.30,4.10,1.34
-UNI-IRT,Morocco Botola Pro,1.77,3.30,4.70,1.33
-YAC-DIF,Morocco Botola Pro,1.88,3.30,4.05,1.34
-LYN-ASA,Norway OBOS-ligaen,1.78,4.05,3.85,1.31
-
+MatchID	League	HomeOdds	DrawOdds	AwayOdds
+Kairat Almaty (Kaz) vs Sutjeska (Mne)	EUROPE	1.20	5.75	10.00
+Flora (Est) vs Iberia 1999 (Geo)	EUROPE	2.70	3.40	2.20
+ML Vitebsk (Blr) vs Univ. Craiova (Rou)	EUROPE	4.20	3.30	1.73
+Petrocub (Mda) vs Egnatia (Alb)	EUROPE	2.30	3.20	2.80
+Zira (Aze) vs Torpedo Kutaisi (Geo)	CONFERENCE LEAGUE - QUALIFICATION	1.57	3.80	4.75
+Connahs Q. (Wal) vs FC Ballkani (Kos)	CONFERENCE LEAGUE - QUALIFICATION	6.50	4.75	1.36
+Differdange (Lux) vs Ilves (Fin)	CONFERENCE LEAGUE - QUALIFICATION	2.50	3.40	2.35
+Ezeiza vs Academia Control Orientado	ARGENTINA	2.33	2.80	2.90
+River Plate W vs Banfield W	ARGENTINA	2.02	2.90	3.70
+Social Atletico Television W vs Boca Juniors W	ARGENTINA	3.60	3.10	1.95
+Huracan W vs Newells Old Boys W	ARGENTINA	1.95	3.05	3.70
+Belgrano W vs Gimnasia L.P. W	ARGENTINA	1.83	3.20	3.95
+San Luis W vs Talleres Cordoba W	ARGENTINA	3.20	3.05	2.12
+Union de Santa Fe W vs San Lorenzo W	ARGENTINA	12.00	5.40	1.19
+Lanus W vs Ferro W	ARGENTINA	3.95	3.05	1.89
+Kahibah vs Maitland	AUSTRALIA	2.30	3.90	2.35
+Gold Coast Knights W vs Souths Strikers W	AUSTRALIA	1.03	14.00	35.00
+Paro vs Tensung	BHUTAN	1.02	19.00	36.00
+GV San Jose vs Tomayapo	BOLIVIA	1.51	4.75	4.50
+Real Oruro vs Universitario de Vinto	BOLIVIA	1.91	3.70	3.30
+Athletic Club vs Operario-PR	BRAZIL	2.25	3.00	3.40
+Blumenau vs Gremio Juventus	BRAZIL	1.15	5.60	11.50
+CEAC/Araruama vs Sao Cristovao	BRAZIL	1.67	3.25	4.33
+Athletico-PR U20 vs RB Bragantino U20	BRAZIL	2.75	3.35	2.15
+Corinthians U20 vs Palmeiras U20	BRAZIL	3.65	3.65	1.74
+Cruzeiro U20 vs Vasco U20	BRAZIL	1.79	3.45	3.55
+Santos U20 vs Botafogo U20	BRAZIL	2.00	3.30	3.00
+Criciuma U20 vs Barra FC U20	BRAZIL	2.40	3.60	2.40
+Anjos do Ceu U20 vs Alianca U20	BRAZIL	2.90	3.50	2.00
+Ceara U20 vs Fortaleza U20	BRAZIL	2.20	3.50	2.57
+Palestino W vs Recoleta W	CHILE	1.11	8.00	13.00
+Deportes Iquique W vs U. Espanola W	CHILE	3.20	3.20	2.10
+Coquimbo W vs Colo-Colo W	CHILE	17.00	8.00	1.10
+S. Wanderers W vs U. Catolica W	CHILE	15.00	7.50	1.13
+Magallanes W vs U. De Chile W	CHILE	21.00	10.00	1.07
+Shanxi Chongde Ronghai vs Dalian Kewei	CHINA	3.35	2.63	2.28
+Hangzhou Linping vs Jiangxi Lushan	CHINA	3.00	2.95	2.30
+Aucas vs Guayaquil City	ECUADOR	1.35	4.33	8.50
+Dep. Santo Domingo vs Ind. del Valle	ECUADOR	7.00	3.75	1.36
+Denmark U19 vs Italy U19	EUROPE	4.75	3.10	1.70
+Spain U19 vs Croatia U19	EUROPE	1.18	6.00	10.00
+Ukraine U19 vs Germany U19	EUROPE	4.10	3.75	1.65
+Jaro 2 vs SJK Akatemia 2	FINLAND	1.50	4.50	4.20
+KuPS W vs HJK W	FINLAND	2.75	3.25	2.20
+EBK W vs HPS W	FINLAND	3.67	4.75	1.55
+Athlone WFC W vs Shelbourne W	IRELAND	2.05	3.30	2.88
+Peamount W vs DLR Waves W	IRELAND	1.29	4.50	8.00
+FAR Rabat vs Stade Marocain	MOROCCO	1.17	5.50	12.00
+Tanzania Prisons vs Mbeya City	TANZANIA	1.73	3.10	4.20
+Honved vs Soroksar	WORLD	1.58	4.10	4.30
+Servette vs Lausanne Ouchy	WORLD	1.58	4.10	4.20
+Skalica vs Z. Moravce-Vrable	WORLD	1.84	3.60	3.45
+Teplice vs Taborsko	WORLD	1.57	3.95	4.60
+Tychy vs BKS Sparta Katowice	WORLD	1.46	4.40	5.00
+Zaglebie vs Ostrava	WORLD	2.10	3.50	2.80
+Zlin vs Hapoel Tel Aviv	WORLD	2.80	3.40	2.16
+Pogon Szczecin vs Chrobry Glogow	WORLD	1.67	3.70	4.10
+Aalborg vs Randers FC	WORLD	3.20	3.75	1.88
+Aarhus Fremad vs Silkeborg	WORLD	2.35	3.40	2.50
+Kluczbork vs Zaglebie Sosnowiec	WORLD	2.50	3.45	2.30
+Piast Gliwice vs Legnica	WORLD	1.50	4.10	5.00
+Basel vs Yverdon	WORLD	1.24	5.75	8.00
+Kolding IF vs Vendsyssel	WORLD	2.38	3.25	2.55
+Nijmegen vs Duisburg	WORLD	1.43	4.50	5.30
+FC Gutersloh vs Arminia Bielefeld	WORLD	8.00	6.10	1.23
+Slovacko vs FK Zorya Luhansk	WORLD	2.10	3.45	2.88
+Hartberg vs Brno	WORLD	2.50	3.30	2.43
+Komarno vs Zvolen	WORLD	1.63	4.00	4.00
+Lipany vs FK Humenne	WORLD	6.25	5.20	1.33
+Sigma Olomouc B vs Bielsko-Biala	WORLD	2.28	3.60	2.55
+Vasas vs Kisvarda	WORLD	2.38	3.40	2.48
+Zawisza vs Sroda	WORLD	1.76	3.95	3.50
+Zemun vs Radnik Bijeljina	WORLD	2.23	3.50	2.63
+FC Rapid Bucuresti vs Kosice	WORLD	1.28	5.60	7.00
+Slaven Belupo vs Csikszereda M. Ciuc	WORLD	1.93	3.55	3.20
+Austria Vienna vs Dun. Streda	WORLD	1.98	3.55	3.05
+Eltersdorf vs Greuther Furth	WORLD	7.00	5.50	1.25
+Jablonec vs Pafos	WORLD	2.75	3.60	2.00
+Mezokovesd-Zsory vs Eger SE	WORLD	1.14	6.00	13.00
+Olympiacos Piraeus vs Rakow	WORLD	1.53	3.75	4.50
+Warta Sieradz vs LKS Lodz II	WORLD	1.90	3.40	3.10
+Zenit vs Neftchi Fargona	WORLD	1.17	6.33	9.50
+Bokelj vs Arsenal Tivat	WORLD	2.60	3.10	2.30
+G.A. Eagles vs Almere City	WORLD	1.44	4.20	4.50
+Heracles vs Groningen	WORLD	3.10	3.50	1.90
+Kematen vs SC Imst	WORLD	8.50	5.50	1.20
+Kornburg vs Nurnberg	WORLD	81.00	23.00	1.01
+NAC Breda vs Eindhoven FC	WORLD	1.57	3.75	4.33
+Pama vs Parndorf	WORLD	6.50	5.00	1.31
+Admira vs Fenerbahce	WORLD	6.50	4.50	1.33
+SC St.Tonis vs Dusseldorf	WORLD	21.00	10.00	1.07
+Schermbeck 2020 vs Kleve	WORLD	1.67	3.60	3.75
+Spartak Moscow vs Rubin Kazan	WORLD	1.50	3.75	5.33
+Breitenrain vs Payerne	WORLD	1.57	3.75	4.20
+Din. Zagreb vs Koper	WORLD	1.25	5.00	8.00
+Newport City vs Newport	WORLD	12.00	6.00	1.17
+Flamengo RJ vs Lausanne	WORLD	1.70	3.80	4.10
